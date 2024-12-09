@@ -1,0 +1,44 @@
+
+section {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    color: #333;
+    z-index: 1; 
+}
+
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(254, 252, 252);
+}
+
+
+.chatbot-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#chat-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}

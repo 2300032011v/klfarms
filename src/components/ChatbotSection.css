@@ -1,0 +1,106 @@
+
+#chatbot-section {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    color: #fffafa;
+    z-index: 1;
+    background-color: #e3f2e1; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    font-family: 'Georgia', serif; 
+}
+
+
+#chatbot-section.special-background {
+    background-color: #d0f5d1; 
+}
+
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2e8b57; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+
+.chatbot-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#chat-input {
+    padding: 12px;
+    width: 300px;
+    font-size: 1rem;
+    border: 2px solid #4caf50; 
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    color: #333; 
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease; 
+}
+
+#chat-input:focus {
+    outline: none;
+    background-color: #e0f7e0; 
+    border-color: #388e3c; 
+}
+
+#send-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#send-btn:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+#send-btn:active {
+    transform: scale(0.98); 
+}
+
+
+#chatbot-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); 
+    opacity: 0.1; 
+    background-repeat: repeat;
+    border-radius: 10px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .chatbot-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #chat-input {
+        width: 80%; 
+        max-width: 400px;
+    }
+
+    #send-btn {
+        width: 80%; 
+        max-width: 400px;
+    }
+}

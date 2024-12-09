@@ -1,0 +1,133 @@
+
+header {
+  background-color: #e8f5e9; 
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #4CAF50; 
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  flex-shrink: 0; 
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; 
+  border: 2px solid #4CAF50; 
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.3); 
+}
+
+
+.nav-links {
+  list-style-type: none;
+  margin: 0 auto; 
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #2e7d32; 
+  padding: 10px 15px;
+  border-radius: 5px; 
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  background-color: #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); 
+  transform: translateY(-2px); 
+}
+
+
+#track-order-btn {
+  background-color: #d32f2f; 
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px; 
+  border: none;
+  box-shadow: 0 4px 6px rgba(211, 47, 47, 0.3); 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#track-order-btn:hover {
+  background-color: #9aeb9c; 
+  transform: scale(1.05); 
+  color: #ffffff; 
+}
+
+
+.cart-icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.cart-icon-btn:hover {
+  color: #007bff;
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0;
+  }
+
+  .nav-links li {
+      margin-bottom: 10px;
+  }
+
+  .nav-links li:last-child {
+      margin-bottom: 0;
+  }
+}
